@@ -31,10 +31,22 @@
     <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico"/>
     <link rel="stylesheet" href="/dist/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+   <script type="text/javascript">
+  function blink_text() {
+    $('.blink').fadeOut(500);
+    $('.blink').fadeIn(500);
+}
+setInterval(blink_text, 1000);
+</script>
 
   </head>
 
   <body>
+
     <div class="pattern"></div>
     <div class="container">
       <div class="content">
@@ -47,23 +59,23 @@
         </div>
         <div class="quote">
           <p>
-            Design <i class="fas fa-magic "></i>, Code <i class="fas fa-code"></i> & Caffeine <i class="fas fa-coffee"></i>
+            Design <i class="fas fa-magic blink"></i>, Code <i class="fas fa-code blink"></i> & Caffeine <i class="fas fa-coffee blink"></i>
           </p>
         </div>
         <div class= "me"id="typewriter">
-<p style="font-size: 42px; ">About Me <i class="fas fa-angle-double-down fa-spin"></i></p>
+<p style="font-size: 42px; ">About Me <i class="fas fa-angle-double-down blink"></i></p>
   
 
 
 
         </div>
-        <img src="/img/divider.svg" alt="divider" class="divider fa-layers-counter">
+        <img src="/img/divider.svg" alt="divider" class="divider fa-layers-counter blink">
         <div class="about"id="typewriter">
         
           
           <p class="intro">
             Hello, <i class="far fa-smile fa-spin" style="color: orange"></i> my name is
-            <em><b style="color: #5500FF">Apoorv</b></em>. A passionate<i class="fab fa-angrycreative fa-3x" style="color: #870DFF;transform: rotate(345deg);" ></i><b style="color: #5500FF">UI designer </b>and a<b style="color: #5500FF"> <cite>Full Stack developer </cite></b> from <b style="color: #8bc34a;">Pune, India.</b>
+            <em><b style="color: #5500FF">Apoorv</b></em>. A passionate<i class="fab fa-angrycreative fa-3x blink" style="color: #870DFF;transform: rotate(345deg);" ></i><b style="color: #5500FF">UI designer </b>and a<b style="color: #5500FF"> <cite>Full Stack developer </cite></b> from <i class="fa fa-map-marker" aria-hidden="true"></i><b style="color: #8bc34a;">Pune, India.</b>
           </p>
           <p class="info">
             I have 3 years of experience in designing and building highly scalable web applications. I mostly work with React JS<i class="fab fa-react fa-2x"></i>, Node JS<i class="fab fa-node fa-2x"></i>,
@@ -72,14 +84,14 @@
           </p>
           <p class="info">
             Currently, I design and develop complex web applications. Drop me a
-            <a href="mailto:talkto@apoorwanand.cf">mail</a> for any new opportunities.
+            <a href="mailto:talkto@apoorwanand.cf" class="blink">mail</a> for any new opportunities.
           </p>
         </div>
         <div class="links">
           <div class="row">
             <div class="col-xs-12">
               <a href="https://github.com/apoorvanand" id="git" target="_blank">Github<i class="fab fa-github"></i></a>
-              <a href="https://glitch.com/@apoorvanand" id="glitch" target="_blank">Glitch</a>
+              <a href="https://glitch.com/@apoorvanand" id="glitch" target="_blank">Glitch <img src="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Flogo-night.svg"style="width: 40px"></a>
               <a href="https://blog.praneshravi.in/" id="medium" target="_blank">Medium<i class="fab fa-medium"></i></a>
               <a href="https://stackoverflow.com/users/4945468/pranesh-ravi" id="so" target="_blank">Stackoverflow<i class="fab fa-stack-overflow"></i></a>
               <a href="https://www.linkedin.com/in/apoorwanand/" id="lki" target="_blank">Linked<i class="fab fa-linkedin"></i></a>
@@ -88,7 +100,7 @@
         </div>
         <div class="projects">
           <div class="row">
-            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+            <!--div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
               <div class="project left">
                 <a href="https://themovientv.com" target="_blank">
                   <div clas s="image m">
@@ -106,9 +118,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div-->
             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-              <div class="project right">
+              <div class="project left">
                 <a href="https://github.com/praneshr/crypto-info" target="_blank">
                   <div class="image c">
                     <div class="hover">
@@ -245,7 +257,7 @@
               </div>
             </div>
           </div>
-          <img src="/img/divider.svg" alt="divider" class="divider">
+          <img src="/img/divider.svg" alt="divider" class="divider blink">
           <div class="row">
             <div class="col-xs-12">
               <div class="more">
@@ -265,7 +277,7 @@
             Designed and developed by Apoorv
           </p>
           <p>
-            <i class="fas fa-heart"></i>
+            <i class="fas fa-heart fa-3x blink" style="color: #F40058"></i>
           </p>
           <div class="copy">
             &copy; 2018 Apoorv Anand
